@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class HamsterClassTest {
     @Test
-    public void theDogClassShouldExist() throws ClassNotFoundException {
+    public void theHamsterClassShouldExist() throws ClassNotFoundException {
         assertThat(Class.forName("com.serenitydojo.Hamster")).isNotNull();
     }
 
@@ -19,7 +19,7 @@ public class HamsterClassTest {
     }
 
     @Test
-    public void theDogClassShouldHaveAFavoriteToy() throws Exception {
+    public void theHamsterClassShouldHaveAFavoriteToy() throws Exception {
         assertThat(Class.forName("com.serenitydojo.Hamster").getDeclaredField("favoriteGame").getGenericType()).isEqualTo(String.class);
     }
 }
